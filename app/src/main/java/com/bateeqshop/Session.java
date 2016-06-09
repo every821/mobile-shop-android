@@ -47,6 +47,8 @@ public class Session {
     public static List<WishList> wishLists;
     private static Integer wishListNumber;
 
+    /** TEST BRANCH*/
+
     public static Integer getWishListNumber() {
         return wishListNumber;
     }
@@ -79,6 +81,8 @@ public class Session {
         }
         return false;
     }
+
+
 
     public static void login(SessionModel sessionModel)
     {
