@@ -48,6 +48,7 @@ public class Session {
     private static Integer wishListNumber;
 
     /** TEST BRANCH*/
+    /** TEST BRANCH DANIEL*/
 
     public static Integer getWishListNumber() {
         return wishListNumber;
