@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/remove_item_loading_bar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:layout_width="0px"
+            android:paddingBottom="17dp"
+            android:paddingTop="17dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/progress_bar_item_shopping_cart" />
+                <ImageView
+                    android:id="@+id/image_shopping_cart_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/noimage"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical" />
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="165dp"
+            android:orientation="vertical"
+            android:layout_weight="0.7"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.2">
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#3B3131"
+                            android:text="Sleeveless Cotton Blouse"
+                            android:id="@+id/title_shopping_cart_item"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_marginBottom="5dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:text="IDR 429,000"
+                            android:textStyle="bold"
+                            android:id="@+id/price_shopping_cart_item"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:text="Size"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.4" />
+                            <TextView
+                                android:background="@drawable/shopping_cart_textbox_corner"
+                                android:id="@+id/size_shopping_cart_item"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:text="12"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:text="Colour"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.4" />
+                            <!--<Spinner-->
+                                <!--android:background="@drawable/shopping_cart_textbox_corner"-->
+                                <!--android:id="@+id/color_shopping_cart_item"-->
+                                <!--android:layout_width="0px"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:layout_weight="0.7"-->
+                                <!--android:gravity="center"-->
+                                <!--android:spinnerMode="dropdown"-->
+                                <!--android:focusable="false"-->
+                                <!--android:scrollIndicators="right"></Spinner>-->
+                            <TextView
+                                android:background="@drawable/shopping_cart_textbox_corner"
+                                android:id="@+id/color_shopping_cart_item"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#000000"
+                                android:text="Red"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp">
+                    <ImageButton
+                        android:id="@+id/shopping_cart_remove_item"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/remove_icon"
+                        android:background="@color/bpTransparent"
+                        android:layout_gravity="center_horizontal"
+                        android:tint="#9a9a9a"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp" />
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="false"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/ic_action_wish_list"
+                        android:layout_toLeftOf="@+id/shopping_cart_remove_item"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

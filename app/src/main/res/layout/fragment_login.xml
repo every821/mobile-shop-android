@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bateeqshop.fragments.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/login_title_margin_top"-->
+            <!--android:paddingStart="@dimen/login_title_padding"-->
+            <!--android:paddingLeft="@dimen/login_title_padding"-->
+            <!--android:src="@drawable/ic_menu_camera"-->
+            <!--android:scaleType="fitStart"/>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_title_margin_top"
+            android:layout_marginBottom="@dimen/login_title_margin_bottom"
+            android:src="@drawable/logo_bateeq_shop"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitStart"/>
+
+        <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+        <LinearLayout
+            android:id="@+id/panel_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/login_layout_left_padding"
+            android:paddingStart="@dimen/login_layout_left_padding"
+            android:paddingRight="@dimen/login_layout_right_padding"
+            android:paddingEnd="@dimen/login_layout_right_padding"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusableInTouchMode="true"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/ic_login_username"/>
+
+                <EditText
+                    android:id="@+id/edit_text_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_text_hint_username"
+                    android:text="dhifa.irawan@moonlay.com"
+                    android:inputType="textEmailAddress"
+                    style="@style/LoginEditText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/ic_login_password"/>
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_text_hint_password"
+                    android:text="standar123"
+                    android:inputType="textPassword"
+                    style="@style/LoginEditText"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:layout_marginStart="@dimen/login_button_margin_left"
+            android:layout_marginLeft="@dimen/login_button_margin_left"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/text_view_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/text_view_change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/login_button_padding"
+                android:background="@drawable/login_button_border"
+                android:text="@string/button_login"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:padding="@dimen/login_button_padding"
+                android:background="@drawable/login_button_border"
+                android:text="@string/button_register"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_progress"
+        />
+
+    <include
+        layout="@layout/view_retry"
+        />
+</RelativeLayout>
+
+

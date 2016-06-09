@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Are you sure you want to remove this product?"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:background="@drawable/product_button_rounded_corner_black"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/remove_item_from_shopping_cart_yes" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move to Wishlish"
+        android:background="@drawable/product_button_rounded_corner_pink"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:background="@drawable/product_button_rounded_corner_grey"
+        android:id="@+id/remove_item_from_shopping_cart_no"
+        />
+
+</LinearLayout>

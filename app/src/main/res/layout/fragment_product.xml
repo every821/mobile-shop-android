@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.1"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sleeveless Cotton Blouse"
+            android:textSize="15sp"
+            android:id="@+id/txtProductTitle"
+            android:layout_gravity="top|center"
+            android:textColor="#808080"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="15 / 171"
+            android:textSize="15sp"
+            android:id="@+id/txtProductCode"
+            android:layout_gravity="top|center_horizontal"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="0.7"
+        android:layout_marginBottom="5dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ProgressBar
+                android:id="@+id/curentImageLoadingBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/img_slider_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="50dp"
+                    android:src="@drawable/ic_action_wish_list"
+                    android:background="@color/bpTransparent"/>
+                <ImageButton
+                    android:id="@+id/product_share"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_menu_share"
+                    android:background="@color/bpTransparent"
+                    />
+                <!--<Button-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#808080"-->
+                <!--android:text=""-->
+                <!--/>-->
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/left_nav"
+                android:layout_width="85dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical|left"
+                android:paddingLeft="1dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ns_left_arrow"
+                    android:scaleType="fitCenter"
+                    android:background="#D3D3D3"
+                    android:layout_gravity="center_vertical|left"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/right_nav"
+                android:layout_width="85dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical|right"
+                android:paddingRight="1dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ns_right_arrow"
+                    android:scaleType="fitCenter"
+                    android:background="#D3D3D3"
+                    />
+            </FrameLayout>
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_product_details"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_button_rounded_corner_grey"
+            android:text="Details"
+            android:textColor="#4d4d4d"
+            android:layout_marginRight="8dp"/>
+        <Button
+            android:id="@+id/btn_product_add_to_cart"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:background="@drawable/product_button_rounded_corner_black"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</LinearLayout>

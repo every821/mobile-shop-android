@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.bateeqshop"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+//    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.picasso:picasso:2.5.3-SNAPSHOT'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.code-troopers.betterpickers:library:2.5.3'
+    compile 'com.mikepenz:actionitembadge:3.2.5@aar'
+    compile 'com.mikepenz:iconics-core:2.5.11@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+}

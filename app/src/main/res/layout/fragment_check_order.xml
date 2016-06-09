@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:text="@string/next"
+            android:id="@+id/next_button"
+            android:background="@drawable/catalogue_button" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_order_list_view"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+    </ListView>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="5dp"
+        android:background="@android:color/darker_gray"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Harga"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp, 1000000"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:id="@+id/total_price"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="5dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALAMAT PENGIRIMAN"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Daniel Nababan"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="jln. abcedefa no 17, Cempaka putih, Jakarta Pusat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/province"
+            android:text="DKI Jakarta"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zipCode"
+            android:text="DKI Jakarta"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="085261263876"/>
+    </LinearLayout>
+
+</LinearLayout>

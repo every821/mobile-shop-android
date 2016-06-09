@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="nav_tab_margin_top">64dp</dimen>
+
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="login_title_margin_top">48dp</dimen>
+    <dimen name="login_title_margin_bottom">24dp</dimen>
+    <dimen name="login_title_padding">24dp</dimen>
+    <dimen name="login_layout_left_padding">20dp</dimen>
+    <dimen name="login_layout_right_padding">20dp</dimen>
+    <dimen name="login_edit_text_top_padding">16dp</dimen>
+    <dimen name="login_edit_text_left_padding">32dp</dimen>
+    <dimen name="login_edit_text_right_padding">16dp</dimen>
+    <dimen name="login_edit_text_bottom_padding">8dp</dimen>
+    <dimen name="login_button_margin_top">48dp</dimen>
+    <dimen name="login_button_margin_left">24dp</dimen>
+    <dimen name="login_button_padding">16dp</dimen>
+    <dimen name="login_button_corner">32dp</dimen>
+    <dimen name="login_button_register_margin_top">8dp</dimen>
+</resources>

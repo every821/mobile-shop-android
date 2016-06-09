@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1" android:padding="10dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="216dp"
+        android:id="@+id/catalog_productImage"
+        android:layout_weight="0.39"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:maxWidth="100dp"
+        android:id="@+id/catalog_productName"
+        android:textSize="11dp"
+        android:layout_below="@+id/catalog_productImage"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/catalog_productPrice"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/catalog_productName" />
+
+</RelativeLayout>

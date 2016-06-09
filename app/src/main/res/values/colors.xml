@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#33B5E5</color>
+    <color name="colorHint">#BFBEBE</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="bateeqPink">#D91964</color>
+</resources>

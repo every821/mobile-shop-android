@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Login" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Loading" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginEditText">
+        <item name="android:background">@drawable/edit_text_custom_line</item>
+        <item name="android:paddingTop">@dimen/login_edit_text_top_padding</item>
+        <item name="android:paddingBottom">@dimen/login_edit_text_bottom_padding</item>
+        <item name="android:paddingLeft">@dimen/login_edit_text_left_padding</item>
+        <item name="android:paddingRight">@dimen/login_edit_text_right_padding</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SearchEditText">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="NavTabTheme">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DashboardStaticImage">
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style
+        name="dialog_animation_fade" >
+        <item name="android:windowEnterAnimation">@anim/fade_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog</item>
+    </style>
+</resources>

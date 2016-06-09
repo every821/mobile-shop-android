@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TabHost
+        android:id="@+id/tabHostProductDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bpTransparent"
+                    android:orientation="vertical"
+                    >
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollView"
+                        android:padding="15dp"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Title"
+                                android:textSize="20sp"
+                                android:id="@+id/product_detail_title"
+                                android:textColor="#808080"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Price"
+                                android:textSize="18sp"
+                                android:id="@+id/product_detail_price"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:paddingLeft="5dp"
+                                android:background="@android:color/darker_gray"
+                                android:layout_marginBottom="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="PRODUCT DETAILS"
+                                android:textSize="18sp"
+                                android:id="@+id/Desc"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                />
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/product_detail_description"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"/>-->
+
+                            <WebView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/product_detail_desc"
+                                android:padding="0dp"
+                                android:layout_margin="0dp"
+                                />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switch1"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bpTransparent"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    >
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="LADIES"
+                                android:textSize="25sp"
+                                android:textColor="#808080"
+                                android:layout_marginBottom="10dp"
+                                />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ladies_size_table"
+                                    android:scaleType="center"
+                                />
+                            </HorizontalScrollView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="MEN"
+                                android:textSize="25sp"
+                                android:textColor="#808080"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/man_size_table"
+                                    android:scaleType="center"
+                                />
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.bateeqshop.fragments.NavContentFragment">
+
+    <ExpandableListView
+        android:id="@+id/nav_content_expandable_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+    </ExpandableListView>
+<!--        android:layout_marginTop="192dp"
+-->
+</FrameLayout>

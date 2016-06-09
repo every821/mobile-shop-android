@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_login_username"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_company"
+            android:id="@+id/edit_text_company"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_login_username"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_address"
+            android:id="@+id/edit_text_address"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_country"
+            android:id="@+id/edit_text_country"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_state"
+            android:id="@+id/edit_text_state"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_city"
+            android:id="@+id/edit_text_city"
+            android:textSize="6pt" />
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_district"
+            android:id="@+id/edit_text_district"
+            android:textSize="6pt"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/edit_text_hint_postal_code"
+            android:id="@+id/edit_text_postal_code"
+            android:inputType="number"
+            android:textSize="6pt" />
+    </LinearLayout>
+</LinearLayout>

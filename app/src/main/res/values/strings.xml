@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Bateeq Shop</string>
+    <string name="facebook_app_id">259716384375271</string>
+    <string name="sync_account_type">bateeqshop.com</string>
+    <string name="content_authority">com.bateeqshop</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_header_home">HOME</string>
+    <string name="navigation_header_login">LOGIN</string>
+
+    <string name="edit_text_search_hint">Search</string>
+
+    <string name="log_out">Log Out</string>
+
+    <string name="edit_text_hint_username">Username</string>
+    <string name="edit_text_hint_password">Password</string>
+    <string name="button_login">Login"</string>
+    <string name="button_register">Register"</string>
+    <string name="button_change_password">Change Password"</string>
+    <string name="button_forgot_password">Request Password"</string>
+    <string name="register">Register</string>
+    <string name="change_password">Change Password</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="edit_text_hint_first_name">First Name</string>
+    <string name="edit_text_hint_last_name">Last Name</string>
+    <string name="edit_text_hint_email">E-mail</string>
+    <string name="edit_text_hint_phone_number">Phone Number</string>
+    <string name="edit_text_hint_gender">Gender</string>
+    <string name="edit_text_hint_old_password">Old Password</string>
+    <string name="edit_text_hint_new_password">New Password</string>
+    <string name="edit_text_hint_confirm_new_password">Confirm New Password</string>
+
+    <string name="btn_text_retry">Retry</string>
+
+
+    <string name="catalogue_sort_title">Sort</string>
+    <string name="catalogue_filter_title">Filter</string>
+    <string name="cancel">Cancel</string>
+
+
+
+    <string name="edit_text_hint_company">Company</string>
+    <string name="edit_text_hint_phone">Phone</string>
+    <string name="edit_text_hint_address">Address</string>
+    <string name="edit_text_hint_country">Country</string>
+    <string name="edit_text_hint_state">State</string>
+    <string name="edit_text_hint_city">City</string>
+    <string name="edit_text_hint_district">District</string>
+    <string name="edit_text_hint_postal_code">Zip Code</string>
+
+    <string name="copy_address">Copy profile address</string>
+    <string name="next">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

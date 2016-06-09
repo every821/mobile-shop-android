@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.DevFragment">
+
+    <Button
+        android:id="@+id/btn_plus_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ shopping"
+        />
+    <Button
+        android:id="@+id/btn_minus_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- shopping"
+        />
+    <Button
+        android:id="@+id/btn_plus_wish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="+ wish"
+        />
+    <Button
+        android:id="@+id/btn_minus_wish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- wish"
+        />
+    <Button
+        android:id="@+id/btn_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="User Info"
+        />
+    <Button
+        android:id="@+id/btn_merge_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Merge Cart"
+        />
+
+</LinearLayout>
